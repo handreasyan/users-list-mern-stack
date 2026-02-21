@@ -1,13 +1,18 @@
+import {UsersTable} from "./components/UsersTable.tsx";
+import {AddUserButton} from "./components/AddUserButton.tsx";
+
 function App() {
 
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
+        <div className="bg-gray-100 min-h-screen p-10">
+            <div className="bg-white shadow-md rounded-lg p-6">
+                <AddUserButton/>
 
-            <h1 className="text-4xl font-bold text-red-600">
-                Tailwind is working
-            </h1>
-        </h1>
+                <div className="overflow-x-auto">
+                    <UsersTable/>
+                </div>
+            </div>
+        </div>
 
     )
 }
