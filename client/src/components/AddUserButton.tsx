@@ -1,4 +1,4 @@
-import {FormDialog} from "./FormDialog.tsx";
+import {FormDialog} from "./form/FormDialog.tsx";
 import {useState} from "react";
 
 interface AddUserButtonProps {
